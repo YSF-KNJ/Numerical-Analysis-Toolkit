@@ -13,5 +13,5 @@ Welcome to our Numerical Analysis Toolkit repository! This toolkit was created b
 
 If you have any questions or comments, please feel free to contact us at:
 
-- Youssef Kanjaa: youssef.kanjaa@gmail.com
+- Youssef Kanjaa: youssefkanja@gmail.com
 
