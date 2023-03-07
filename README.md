@@ -1,17 +1,21 @@
-# Numerical Analysis Toolkit
+# ANALYSE NUMÉRIQUE EN LIGNE
+**Outils Mathématiques pour la Résolution Numérique de Problèmes**
 
-Welcome to our Numerical Analysis Toolkit repository! This toolkit was created by **Youssef Kanjaa**, **Mohamed Ainouz**, and **Ouassima Chairi Zrermi** as a project for our numerical analysis course. It provides a collection of numerical methods implemented in Python, including:
 
-- Bisection Method
-- Newton-Raphson Method
-- Secant Method
-- Fixed Point Iteration
-- Trapezoidal Rule
-- Rectangle Rule
+Bienvenue dans notre dépôt GitHub de la Boîte à outils d'analyse numérique ! Cette boîte à outils a été créée par **Youssef Kanjaa**, **Mohamed Ainouz**, et **Ouassima Chairi Zrermi** dans le cadre de notre cours d'analyse numérique. Elle fournit une collection de méthodes numériques implémentées en Python, y compris :
+
+
+- La méthode de point fixe
+- La méthode de Newton
+- La méthode de trapèze
+- La méthode de rectangle
+- La méthode de polynôme de Lagrange
+
+
 
 ## Contact
 
-If you have any questions or comments, please feel free to contact us at:
+Si vous avez des questions ou des commentaires, n'hésitez pas à nous contacter à l'adresse suivante :
 
 - Youssef Kanjaa: youssefkanja@gmail.com
 
