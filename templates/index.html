@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <title>ANALYSE NUMERIQUE</title>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+        body{
+            background-image: linear-gradient(45deg,#2c3e50,#27ae60,#2980b9);
+            height: 100%;
+        }
+        .btn{
+            background-color: blue;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            margin-left: 10px;
+            cursor: pointer;
+            border-radius: 20px;
+            
+        }
+        .card {
+            border: none;
+        }
+       .btn:hover {
+          border: 2px solid #fff;
+        }
+        #icon{
+			position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1;
+            padding: 2px;
+        }
+        h1{
+            color: #1c1f4c;font-family: 'Times New Roman', Times, serif;font-size: 50px; 
+            
+        }
+        .navbar .navbar-toggler:focus {
+            box-shadow: none;
+        }
+
+    </style>
+
+</head>
+<body >
+        <div>
+           <nav class="navbar navbar-expand-lg my-navbar">
+            <div class="container">
+              <a class="navbar-brand text-dark fs-4 ps-2 fw-bold " href="#" id="logo">ANALYSE NUMERIQUE</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-bold p-2 text-uppercase">
+                  <li class="nav-item active">
+                    <a href="{{ url_for('instructions') }}"  target="new"   class="nav-link text-dark"><span>instructions&nbsp;</span><i class="fa-solid fa-circle-info"></i></a>
+                  </li>
+                  <li class="nav-item active">
+                    <a href="{{ url_for('about') }}"  target="new" class="nav-link text-dark"><span>about us&nbsp;</span><i class="fa-solid fa-user-group"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+
+    <div id="icon">
+        
+    </div>
+ 
+    <div class="container  w-30   " >
+        <div >
+            <h1 class="text-center text-capitalize">Bienvenue</h1>
+        </div>
+        <div class="card text-center mb-5 mx-auto" style="background-color:#1c1f4c;margin-right: 25px;"  >
+            <div class="card-header text-capitalize" style="background-color:#0a796a;color: white;font-size: 30px; font-family: 'Times New Roman', Times, serif;">La méthode de Newton</div>
+            <div class="card-body " style="background-color:#19886c">
+              <p class="card-text">une méthode itérative pour trouver les racines d'une fonction donnée en utilisant des approximations successives.</p>
+              <div ><a href= "{{ url_for('newton') }}" target="_blank" class="btn" style="background-color:#0a796a;font-family: 'Times New Roman', Times, serif; color: white;font-size: 20px;font-weight: bold;" >Essayer</a></div>
+        </div>
+                
+                
+        </div>
+        <div class="card text-center mb-5 mx-auto"  style="background-color:#1c1f4c;margin-right: 25px;"  >
+                <div class="card-header text-capitalize" style="background-color:#016a70;color: white;font-size: 30px; font-family: 'Times New Roman', Times, serif;">La méthode de point fixe</div>
+                <div class="card-body " style="background-color:#00848c;">
+                  
+                
+                  <p class="card-text">une autre méthode itérative qui consiste à trouver le point fixe d'une fonction donnée, c'est-à-dire un point où la fonction ne change pas.</p>
+                  <div ><a href="{{ url_for('point_fixe') }}" target="_blank" class="btn" style="background-color: #016a70;font-family: 'Times New Roman', Times, serif;color: white;font-size: 20px;font-weight: bold;">Essayer</a></div>
+                </div>
+               
+        </div>
+        <div class="card text-center mb-5 mx-auto"  style="background-color:#1c1f4c;margin-right: 25px;"  >
+                    <div class="card-header text-capitalize" style="background-color: #234E70;color: white;font-size: 30px; font-family: 'Times New Roman', Times, serif;">Le polynôme de Lagrange</div>
+                    <div class="card-body " style="background-color:#255e80;">
+                      
+                    
+                      <p class="card-text">une méthode pour interpoler une fonction à partir d'un ensemble de points de données en utilisant un polynôme de degré n.</p>
+                      <div ><a href="{{ url_for('polynome_lagrange') }}" target="_blank" class="btn"  style="background-color: #234E70;font-family: 'Times New Roman', Times, serif;color: white;font-size: 20px;font-weight: bold;">Essayer</a></div>
+                    </div>
+      
+        </div>
+        <div class="card text-center mb-5 mx-auto" style="background-color:#1c1f4c;margin-right: 25px;"  >
+            <div class="card-header text-capitalize" style="background-color:#04a086;color: white;font-size: 30px; font-family: 'Times New Roman', Times, serif;">la méthode des trapèzes</div>
+            <div class="card-body " style="background-color:#02ac8f">
+              <p class="card-text">une méthode pour estimer l'aire sous une courbe en la divisant en trapèzes et en calculant la somme de leurs aires.</p>
+              <div ><a href="{{ url_for('trapeze') }}" target="_blank" class="btn" style="background-color:#04a086;font-family: 'Times New Roman', Times, serif; color: white;font-size: 20px;font-weight: bold;" >Essayer</a></div>
+            </div>
+
+            
+        </div>
+        <div class="card text-center mb-5 mx-auto"  style="background-color:#1c1f4c;margin-right: 25px;"  >
+            <div class="card-header text-capitalize" style="background-color:#41ad6e;color: white;font-size: 30px; font-family: 'Times New Roman', Times, serif;">la méthode des rectangles</div>
+            <div class="card-body " style="background-color:#41c277;">
+              
+            
+              <p class="card-text">une méthode pour estimer l'aire sous une courbe en la divisant en rectangles et en calculant la somme de leurs aires.</p>
+              <div ><a href="{{ url_for('rectangle') }}" target="_blank" class="btn" style="background-color: #41ad6e;font-family: 'Times New Roman', Times, serif;color: white;font-size: 20px;font-weight: bold;">Essayer</a></div>
+            </div>
+           
+        </div>        
+    </div>
+
+    
+    <script>
+        var button = document.querySelector(".navbar-toggler");
+        var navbarCollapse = document.querySelector(".navbar-collapse");
+        var navbarLinks = document.querySelectorAll('.navbar-nav>li>a');
+        button.addEventListener("click", function() {
+          navbarCollapse.classList.toggle("show");
+        });
+        for (var i = 0; i < navbarLinks.length; i++) {
+          navbarLinks[i].addEventListener('click', function() {
+            navbarCollapse.classList.remove('show');
+          });
+        }
+      
+    </script>
+</body>
+</html>
