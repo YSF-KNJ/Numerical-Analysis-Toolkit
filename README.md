@@ -3,7 +3,7 @@
 
 [Tester l'application en direct](http://youssefkanjaa.pythonanywhere.com/)
 
-Bienvenue dans notre dépôt GitHub de la Boîte à outils d'analyse numérique! Cette boîte à outils a été créée par **Youssef Kanjaa**, **Mohamed Ainouz**, et **Ouassima Chairi Zrermi** dans le cadre de notre cours d'analyse numérique encadré par **M. Fadil Chababi**. Elle fournit une collection de méthodes numériques implémentées en Python, y compris :
+Bienvenue dans notre dépôt GitHub de la Boîte à outils d'analyse numérique! Cette boîte à outils a été créée par **Youssef Kanjaa**, **Mohamed Ainouz**, et **Ouassima Chairi Zrermi** dans le cadre de notre cours d'analyse numérique encadré par **M. Fadil Chabbabi**. Elle fournit une collection de méthodes numériques implémentées en Python, y compris :
 
 
 - La méthode de point fixe
