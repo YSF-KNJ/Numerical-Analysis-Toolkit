@@ -9,7 +9,9 @@ Welcome to our Numerical Analysis Toolkit repository! This toolkit was created b
 - Trapezoidal Rule
 - Rectangle Rule
 
-## Getting Started
+## Contact
 
-To use this toolkit, you need to have Python 3 installed on your machine. Clone this repository to your local machine and install the required packages by running the following command in your terminal:
+If you have any questions or comments, please feel free to contact us at:
+
+- Youssef Kanjaa: youssef.kanjaa@gmail.com
 
